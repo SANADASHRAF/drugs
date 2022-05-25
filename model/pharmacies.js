@@ -1,0 +1,18 @@
+const mongoose=require('mongoose');
+
+const pschamcyshema =mongoose.Schema({
+    pharmacyname : {
+        type : String ,
+        required :true,
+    },
+
+    location : {
+        type : String ,
+        required :true,
+    },
+
+    
+    
+})
+
+module.exports=mongoose.model('pharmacies', pschamcyshema);
